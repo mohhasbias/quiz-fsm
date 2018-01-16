@@ -4,18 +4,15 @@ import { element } from 'deku';
 
 import actions from '../../actions';
 
-const Result = (model) => {
+const Result = (model: any) => {
   const {
     dispatch,
-    context: {
-      fsm,
-    }
   } = model;
 
   return (
     <div>
       <h1>Result</h1>
-      <button onClick={() => dispatch(actions.fsm.startOver(fsm))} >
+      <button onClick={() => dispatch(actions.fsm.startOver())} >
         Start Over
       </button>
     </div>

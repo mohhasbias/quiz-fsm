@@ -19,12 +19,14 @@ const fsm = createFSM({
 });
 
 const initialState = {
+  fsm,
   currentState: 'none',
   history: [],
 };
 
 const fsmTransition = handleActions({
-  [actions.fsm.changeState]: (state, action) => ({
+  [actions.fsm.changeState]: (state, action) => (_.assign({}, state, {
+    fsm: action.payload.fsm,
     currentState: action.payload.to,
     history: [
       ...state.history,
@@ -34,7 +36,7 @@ const fsmTransition = handleActions({
         name: action.payload.name
       }
     ]
-  }),
+  })),
 },
 initialState);
 

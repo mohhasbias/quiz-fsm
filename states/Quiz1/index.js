@@ -8,7 +8,6 @@ const Quiz1 = (model: any) => {
   const {
     dispatch,
     context: {
-      fsm,
       data
     }
   } = model;
@@ -16,7 +15,7 @@ const Quiz1 = (model: any) => {
   return (
     <div>
       <h1>Quiz 1</h1>
-      <button onClick={() => dispatch(actions.fsm.cekJawaban(fsm, data))} >
+      <button onClick={() => dispatch(actions.fsm.cekJawaban(data))} >
         Next
       </button>
     </div>

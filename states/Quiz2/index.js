@@ -8,14 +8,14 @@ const Quiz2 = (model: any) => {
   const {
     dispatch,
     context: {
-      fsm
+      data
     }
   } = model;
 
   return (
     <div>
       <h1>Quiz 2</h1>
-      <button onClick={() => dispatch(actions.fsm.cekJawaban(fsm))} >
+      <button onClick={() => dispatch(actions.fsm.cekJawaban(data))} >
         Next
       </button>
     </div>
