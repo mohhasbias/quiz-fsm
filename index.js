@@ -10,11 +10,6 @@ import App from './App';
 
 // definition
 const fsm = createFSM({
-  // transitions: [
-  //   { name: 'init', from: 'none', to: 'quiz1' },
-  //   // { name: 'cekJawaban', from: 'quiz1', to: (data) => data.jawabanBenar ? 'quiz2' : 'quiz1' }
-  //   { name: 'cekJawaban', from: 'quiz1', to: 'quiz2' }
-  // ]
   transitions
 });
 
@@ -49,10 +44,7 @@ const app = createApp(document.getElementById('app'), store.dispatch);
 const render = () => {
   app(
     <App />,
-    {
-      data: store.getData(),
-      fsm
-    }
+    { data: store.getData() }
   );
 };
 

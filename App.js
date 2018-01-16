@@ -1,13 +1,14 @@
+// @flow
+// @jsx element
 import { element } from 'deku';
 
 import mapStateToView from './mapStateToView';
+import 'normalize.css';
 
-const App = (model) => {
+const App = (model: any) => {
   const {
-    dispatch,
     context: {
       data,
-      fsm
     },
   } = model;
 

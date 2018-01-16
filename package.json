@@ -10,6 +10,7 @@
     "flow-bin": "^0.63.1",
     "javascript-state-machine": "^3.0.1",
     "jest": "^22.0.6",
+    "normalize.css": "^7.0.0",
     "poi": "^9.6.12",
     "poi-preset-react": "^9.2.1",
     "react": "^16.2.0",
