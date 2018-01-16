@@ -1,0 +1,27 @@
+{
+  "name": "quiz",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-flow": "^6.23.0",
+    "deku": "^2.0.0-rc16",
+    "flow-bin": "^0.63.1",
+    "javascript-state-machine": "^3.0.1",
+    "jest": "^22.0.6",
+    "poi": "^9.6.12",
+    "poi-preset-react": "^9.2.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-actions": "^2.2.1",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-thunk": "^2.2.0"
+  },
+  "scripts": {
+    "start": "poi",
+    "test": "jest --watchAll"
+  }
+}
